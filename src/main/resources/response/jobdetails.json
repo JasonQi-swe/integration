@@ -1,0 +1,85 @@
+{
+  "success": true,
+  "message": "",
+  "data": {
+    "id": "3738360408",
+    "state": "CLOSED",
+    "title": "Golang Developer",
+    "description": "Dice is the leading career destination for tech experts at every stage of their careers. Our client, Qcentrio, is seeking the following. Apply via Dice today!\n\nTitle: Golang Developer\n\nLocation: Mid Town, NY (2 days in a week)\n\nDuration: Contract\n\nRequired Skills:\n\nExperience in Golang, AWS and API\n\nStrong communication skills.\n\nBachelor’s degree is required.\n\nTeamwork and collaboration skills",
+    "url": "https://www.linkedin.com/jobs/view/3738360408/",
+    "applyMethod": {
+      "companyApplyUrl": "https://click.appcast.io/track/hq0o2vw?cs=ivj&sjg=3073",
+      "easyApplyUrl": ""
+    },
+    "company": {
+      "id": 6849,
+      "name": "Dice",
+      "universalName": "dice",
+      "description": "Dice’s tech-focused career marketplace enables direct, meaningful connections between recruiters and technologists. Our connection tools, unrivaled matching capabilities, and branding opportunities speed up the vetting process, reduce time-to-hire and establish trust, making it easy to build a talent pipeline for current and future roles. \n\nWe empower you with: \n\n- Real-time connections via instant messaging. Connect with job applicants and target profiles in TalentSearch to immediately reach the most suitable tech candidates. \n\n- Powerful tools including branded company pages, targeted marketing efforts, and a recruiter profile to detail your corporate and hiring philosophy, areas of strength in tech, status updates, upcoming events, and additional hiring needs.  \n\n- The most complete technologist information to assist in sourcing, featuring the most detailed candidate profiles with an overview of skills, experiences, titles and preferences. \n\n- Best-in-class AI, personalized to your company and hiring requirements, designed to filter candidates to deliver the best matches.  \n\n- More transparency in your interactions with our user-friendly layout, which enables you to quickly understand a technologist’s experience and goals, while also sharing your background and building credibility with your recruiter profile. ",
+      "logo": "https://media.licdn.com/dms/image/C560BAQEYK67Tel_mng/company-logo_200_200/0/1630655500596/dice_logo?e=1723680000&v=beta&t=dc0idd_9ZvNjWKB2tR68vzQSlAXbfLglRTQrwfd0qPU",
+      "url": "https://www.linkedin.com/company/dice",
+      "followerCount": 253407,
+      "staffCount": 705,
+      "staffCountRange": {
+        "start": 1001,
+        "end": 5000
+      },
+      "specialities": [
+        "Technology and engineering recruitment solutions",
+        "Employment",
+        "Hiring",
+        "Job search",
+        "Postings",
+        "Resume Search",
+        "Open Web",
+        "Social Recruiting",
+        "Recruitment",
+        "Technical Recruiting",
+        "Talent Pipeline Management",
+        "Career Management",
+        "Sourcing"
+      ],
+      "industries": [
+        "Software Development"
+      ],
+      "headquarter": {
+        "geographicArea": "Colorado",
+        "country": "US",
+        "city": "Centennial",
+        "postalCode": "80111",
+        "line2": "Suite 400 ",
+        "line1": "6465 South Greenwood Plaza Boulevard"
+      }
+    },
+    "contentLanguage": {
+      "code": "EN",
+      "name": "English"
+    },
+    "location": "New York, NY",
+    "type": "Full-time",
+    "views": 68,
+    "closed": true,
+    "workRemoteAllowed": true,
+    "workPlace": "Remote",
+    "expireAt": 1699787339000,
+    "formattedJobFunctions": [
+      "Engineering",
+      "Information Technology"
+    ],
+    "jobFunctions": [
+      "ENG",
+      "IT"
+    ],
+    "industries": [
+      6
+    ],
+    "formattedIndustries": [
+      "Technology, Information and Internet"
+    ],
+    "formattedExperienceLevel": "Entry level",
+    "listedAt": 1697195339000,
+    "listedAtDate": "2023-10-13 11:08:59 +0000 UTC",
+    "originalListedAt": 1697155200000,
+    "originalListedDate": "2023-10-13 00:00:00 +0000 UTC"
+  }
+}

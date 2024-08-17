@@ -1,0 +1,271 @@
+package backup;
+
+import com.google.api.services.sheets.v4.model.Spreadsheet;
+import com.knuddels.jtokkit.api.Encoding;
+import com.example.integration.entity.Application;
+import com.example.integration.entity.CheckedJob;
+import com.example.integration.entity.Job;
+import com.example.integration.entity.Tenant;
+import com.example.integration.enumerator.searchJobsRequest.DatePosted;
+import com.example.integration.enumerator.searchJobsRequest.SortOption;
+import com.example.integration.model.clientModel.GetJobDetailsResponse;
+import com.example.integration.model.Answer;
+import com.example.integration.model.JobSummary;
+import com.example.integration.model.clientModel.SearchJobsRequest;
+import com.example.integration.model.Question;
+import com.example.integration.enumerator.AIModel;
+import com.example.integration.utility.SkillUtil;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.io.IOException;
+import java.security.GeneralSecurityException;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+
+@Service
+@Slf4j
+public class IntegrationService {
+
+    @Autowired
+    private LinkedInService linkedInService;
+
+    @Autowired
+    private AIService aiService;
+
+    @Autowired
+    private CheckedJobService checkedJobService;
+
+    @Autowired
+    private JobService jobService;
+
+    @Autowired
+    private ApplicationService applicationService;
+
+    @Autowired
+    private Encoding encoding;
+
+    public boolean processProvidedJobs(Tenant tenant, List<String> jobIds) throws GeneralSecurityException, IOException {
+        return processJobsCommon(tenant, jobIds, true);
+    }
+
+    public boolean processJobs(Tenant tenant) throws GeneralSecurityException, IOException {
+        return processJobsCommon(tenant, new ArrayList<>(), false);
+    }
+
+    private boolean processJobsCommon(Tenant tenant, List<String> jobIds, boolean providedJobs) throws GeneralSecurityException, IOException {
+        String userName = tenant.getUserName();
+        String cv = tenant.getCv();
+        String summary = tenant.getSummary();
+        Long tenantId = tenant.getId();
+        String screeningKeywords = tenant.getScreeningSkills();
+        String searchingKeyWords = tenant.getSearchingKeyWords();
+        Integer totalTargetJobNumber = tenant.getTotalTargetJobNumber();
+        SearchJobsRequest request = new SearchJobsRequest();
+        request.setKeywords(searchingKeyWords);
+        request.setLocationId("90010409");
+        request.setSort(SortOption.mostRecent.name());
+        request.setDatePosted(DatePosted.anyTime.name());
+
+        int totalCountTest = 0;
+        int page = 0;
+        int found_targetedJobs = 0;
+        while (found_targetedJobs <= totalTargetJobNumber) {
+            request.setPage(page++);
+            log.info("page: {}", page);
+
+            List<JobSummary> jobs = providedJobs ? null : linkedInService.searchJobs(request);
+            if (!providedJobs && (jobs == null || jobs.isEmpty())) {
+                log.warn("No new jobs");
+                break;
+            }
+
+            int jobsCount = 0;
+            Map<String, Job> twentyJobsMap = new HashMap<>();
+            List<String> ids = providedJobs ? jobIds : getJobIdsFromSummaries(jobs);
+
+            for (int i = 0; i < ids.size(); i++) {
+                totalCountTest++;
+                String jobId = ids.get(i);
+                Job jobEntity = getOrCreateJob(jobId, userName);
+
+                if (jobEntity == null) continue;
+
+                if (!passesScreening(jobEntity, tenant, screeningKeywords)) {
+                    if (i != ids.size() - 1) continue;
+                }
+
+                jobsCount++;
+                twentyJobsMap.put(jobId, jobEntity);
+
+                if (jobsCount == 25 || i == ids.size() - 1) {
+                    processTwentyJobs(tenant, cv, summary, twentyJobsMap, userName);
+                    found_targetedJobs += twentyJobsMap.size();
+                    if (found_targetedJobs >= totalTargetJobNumber) {
+                        createReport(tenant);
+                        log.info("There are total {} jobs have been targeted", totalCountTest);
+                        return true;
+                    }
+                    twentyJobsMap.clear();
+                    jobsCount = 0;
+                }
+            }
+        }
+        log.info("There are total {} jobs have been checked", totalCountTest);
+        return false;
+    }
+
+    private List<String> getJobIdsFromSummaries(List<JobSummary> jobs) {
+        List<String> jobIds = new ArrayList<>();
+        for (JobSummary job : jobs) {
+            jobIds.add(job.getId());
+        }
+        return jobIds;
+    }
+
+    private Job getOrCreateJob(String jobId, String userName) throws IOException {
+        Optional<Job> jobOptional = jobService.findById(Long.valueOf(jobId));
+        if (jobOptional.isPresent()) {
+            return jobOptional.get();
+        } else {
+            GetJobDetailsResponse jobDetail = linkedInService.getJobDetails(jobId);
+            if (jobDetail != null) {
+                Job jobEntity = new Job();
+                jobEntity.setId(Long.valueOf(jobId));
+                jobEntity.setTitle(jobDetail.getData().getTitle());
+                jobEntity.setUrl(jobDetail.getData().getUrl());
+                jobEntity.setCompany(jobDetail.getData().getCompany().getName());
+                jobEntity.setLocation(jobDetail.getData().getLocation());
+                jobEntity.setListedAtDate(LocalDateTime.parse(jobDetail.getData().getListedAtDate()));
+                jobEntity.setState(jobDetail.getData().getState());
+                jobEntity.setClosed(jobDetail.getData().isClosed());
+                jobEntity.setDescription(jobDetail.getData().getDescription());
+                jobEntity.setType(jobDetail.getData().getType());
+                jobEntity.setFormattedExperienceLevel(jobDetail.getData().getFormattedExperienceLevel());
+                jobService.save(jobEntity);
+                return jobEntity;
+            } else {
+                log.warn("Job details not found for jobId: {}", jobId);
+                return null;
+            }
+        }
+    }
+
+    private boolean passesScreening(Job jobEntity, Tenant tenant, String screeningKeywords) {
+        String jobDescription = jobEntity.getDescription();
+        List<String> firstScreenKeywords = new ArrayList<>();
+        firstScreenKeywords.add(screeningKeywords);
+        if (!SkillUtil.containsAllKeywords(jobDescription, firstScreenKeywords)) {
+            log.info("{} The job '{}' does not contain the keywords '{}'", tenant.getUserName(), jobEntity.getId(), firstScreenKeywords);
+            CheckedJob checkedJob = new CheckedJob();
+            checkedJob.setJob(jobEntity);
+            checkedJob.setTenant(tenant);
+            checkedJobService.save(checkedJob);
+            return false;
+        } else {
+            log.info("Passed the skill keywords screening");
+            return true;
+        }
+    }
+
+    private void processTwentyJobs(Tenant tenant, String cv, String summary, Map<String, Job> twentyJobsMap, String userName) throws IOException {
+        StringBuilder combinedQuestion = new StringBuilder(String.format("Here are %s job descriptions, a job searching summary and a CV. Only return the job IDs that fit the CV very well, and a short reason why you think the job is a fit.\n\n", twentyJobsMap.size()));
+        for (Map.Entry<String, Job> entry : twentyJobsMap.entrySet()) {
+            combinedQuestion.append(String.format("Job ID: %s, Description: '%s'.\n", entry.getKey(), entry.getValue().getDescription()));
+
+            CheckedJob checkedJob = new CheckedJob();
+            checkedJob.setJob(entry.getValue());
+            checkedJob.setTenant(tenant);
+            checkedJobService.save(checkedJob);
+        }
+
+        combinedQuestion.append(String.format("\nSearching summary: %s", summary));
+        combinedQuestion.append(String.format("\nCV: %s", cv));
+        combinedQuestion.append("\nAnswer format: jobId1: reason1, jobId2: reason2, jobId5: reason5, jobId9: reason9");
+
+        String question = combinedQuestion.toString();
+        log.info("{} Combined Question:\n{}", userName, question);
+
+        int tokenCount = encoding.countTokens(question);
+        if (tokenCount > 127000) {
+            log.error("Current question token {} is more than the maximum.", tokenCount);
+        } else {
+            log.info("tokenCount: {}", tokenCount);
+            Answer answer = aiService.getAnswer(new Question(question), AIModel.GPT_4o_mini);
+            processAIResponse(answer, tenant, twentyJobsMap, cv, userName);
+        }
+    }
+
+    private void processAIResponse(Answer answer, Tenant tenant, Map<String, Job> twentyJobsMap, String cv, String userName) throws IOException {
+        Long tenantId = tenant.getId();
+        List<String> positiveJobIds = new ArrayList<>();
+        Map<String, String> jobIdToReasonMap = new HashMap<>();
+
+        String[] jobEntries = answer.answer().split(", ");
+        for (String jobEntry : jobEntries) {
+            String[] parts = jobEntry.split(": ");
+            if (parts.length == 2) {
+                String fitJobId = parts[0].trim();
+                String reason = parts[1].trim();
+                positiveJobIds.add(fitJobId);
+                jobIdToReasonMap.put(fitJobId, reason);
+            }
+        }
+
+        for (String positiveJobId : positiveJobIds) {
+            log.info("Job ID: {}, Reason: {}", positiveJobId, jobIdToReasonMap.get(positiveJobId));
+            if (alreadyApplied(positiveJobId, tenantId)) {
+                log.info("Application with jobid {} tenantId {} exists already", positiveJobId, tenantId);
+                continue;
+            }
+            String q = String.format(
+                    "Based on the job '%s' and my cv '%s', write a simple short cover letter. Do NOT include these: **[Your Name]** [Your Address] [City, State, ZIP Code] [Email Address] [Phone Number] [Date] [Company Address] [City, State, ZIP Code]. And exclude these kinds of unnecessary words: \"Certainly! Here's a simple and concise cover letter tailored to the job description provided:\"  or \"Feel free to customize this cover letter further to better match your personal style and experiences.\"",
+                    twentyJobsMap.get(positiveJobId).getDescription(), cv
+            );
+            String cover_letter = aiService.getAnswer(new Question(q), AIModel.GPT_4o).answer();
+            log.info("[{}] generated cover letter {} for jobid {}", userName, cover_letter, positiveJobId);
+
+            Application application = new Application();
+            application.setJob(twentyJobsMap.get(positiveJobId));
+            application.setTenant(tenant);
+            application.setCoverLetter(cover_letter);
+            application.setReasonToSelect(jobIdToReasonMap.get(positiveJobId));
+            applicationService.save(application);
+        }
+    }
+
+    private boolean alreadyApplied(String positiveJobId, Long tenantId) {
+        return applicationService.findAllByTenantIdAndJobId(tenantId, Long.valueOf(positiveJobId)).size() > 0;
+    }
+
+    public void createReport(Tenant tenant) throws GeneralSecurityException, IOException {
+        GoogleSheetsService googleSheetsService = new GoogleSheetsService();
+        Spreadsheet spreadsheetId = googleSheetsService.createSpreadsheet(tenant.getUserName() + "_" + LocalDate.now());
+        // Define the header row
+        List<List<Object>> values = new ArrayList<>();
+        values.add(List.of("Tenant Username", "Job ID", "Job Title", "Job URL", "Cover Letter"));
+
+        List<Application> applications = applicationService.findAllByTenantIdAndDate(tenant.getId(), LocalDate.now());
+
+        // Add application data to the sheet
+        for (Application application : applications) {
+            Job job = application.getJob();
+            values.add(List.of(
+                    tenant.getUserName(),
+                    job.getId().toString(),
+                    job.getTitle(),
+                    job.getUrl(),
+                    application.getCoverLetter()
+            ));
+        }
+
+        // Update the sheet with data
+        googleSheetsService.updateSheet(spreadsheetId.getSpreadsheetId(), "Sheet1!A1", values);
+    }
+}

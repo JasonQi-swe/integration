@@ -1,0 +1,877 @@
+{
+  "success": true,
+  "message": "",
+  "data": [
+    {
+      "id": "3869795289",
+      "title": "Golang Developer",
+      "url": "https://www.linkedin.com/jobs/view/3869795289",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "259821584",
+      "company": {
+        "name": "Intelliswift Software",
+        "logo": "https://media.licdn.com/dms/image/D4D0BAQG-pGoXI-eHkQ/company-logo_200_200/0/1688375508135/intelliswift_logo?e=1720656000&v=beta&t=Xl5E_oaTBlv5c7_flTyGXo4pxT5W_d8ANlJi0n3ZSNQ",
+        "url": "https://www.linkedin.com/company/intelliswift/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "San Francisco Bay Area (On-site)",
+      "type": "Contract",
+      "postDate": "5 days ago"
+    },
+    {
+      "id": "3861719340",
+      "title": "Senior VOIP Engineer Asterisk Professional",
+      "url": "https://www.linkedin.com/jobs/view/3861719340",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "2265230",
+      "company": {
+        "name": "13BELOW CONSULTING",
+        "url": "https://www.linkedin.com/company/13below-consulting/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "United States (Remote)",
+      "type": "Full-time",
+      "postDate": "3 weeks ago",
+      "benefits": "$95K/yr - $125K/yr"
+    },
+    {
+      "id": "3869758834",
+      "title": "Back End Developer",
+      "url": "https://www.linkedin.com/jobs/view/3869758834",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "164595731",
+      "company": {
+        "name": "Ascendion",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQGHeQsU54NLQA/company-logo_200_200/0/1663258479025/ascendion_logo?e=1720656000&v=beta&t=cl9QSBridE5mBl9GVZIiERROPAXzB4tONOTLqI5vwH0",
+        "url": "https://www.linkedin.com/company/ascendion/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "McLean, VA (Hybrid)",
+      "type": "Full-time",
+      "postDate": "2 weeks ago",
+      "benefits": "$130K/yr - $170K/yr · Medical, Vision, Dental, 401(k), +1 benefit"
+    },
+    {
+      "id": "3831141056",
+      "title": "Customer Inside Sales Representative",
+      "url": "https://www.linkedin.com/jobs/view/3831141056",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "444871914",
+      "company": {
+        "name": "Grizzly New Marketing Inc.",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFSedtsI8wFsg/company-logo_200_200/0/1637757790920?e=1720656000&v=beta&t=C2vYUbYYUaX-k9RRtbcWW9gJssOBlc5L8k8FDt7peOM",
+        "url": "https://www.linkedin.com/company/grizzlynewmarketinginc/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "New York, NY (On-site)",
+      "type": "Full-time",
+      "postDate": "1 month ago",
+      "benefits": "$50K/yr - $70K/yr · 401(k), +2 benefits"
+    },
+    {
+      "id": "3862527039",
+      "title": "Software Architect (Golang)",
+      "url": "https://www.linkedin.com/jobs/view/3862527039",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "367722893",
+      "company": {
+        "name": "Luxoft",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGEEw9HXvgGzA/company-logo_200_200/0/1639383759204/luxoft_logo?e=1720656000&v=beta&t=BTyKr45E_Q2GMKeKD5UxJ_Ptwv9mWp9Zhf7GwLo0eGg",
+        "url": "https://www.linkedin.com/company/luxoft/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "United States (Remote)",
+      "type": "Full-time",
+      "postDate": "3 weeks ago"
+    },
+    {
+      "id": "3847745771",
+      "title": "Senior Backend Engineer, GraphQL",
+      "url": "https://www.linkedin.com/jobs/view/3847745771",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "421266878",
+      "company": {
+        "name": "Reddit, Inc.",
+        "logo": "https://media.licdn.com/dms/image/D560BAQFQPgrgVb19Kw/company-logo_200_200/0/1701361977074/reddit_com_logo?e=1720656000&v=beta&t=VvoleJGom5w63gquPL7-mepgEMb8q6oZ3nTCfhLUG_U",
+        "url": "https://www.linkedin.com/company/reddit-com/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "San Francisco, CA",
+      "type": "Full-time",
+      "postDate": "1 month ago",
+      "benefits": "$190.8K/yr - $267.1K/yr · Vision, 401(k)"
+    },
+    {
+      "id": "3847748697",
+      "title": "Senior Backend Engineer, GraphQL",
+      "url": "https://www.linkedin.com/jobs/view/3847748697",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "421266878",
+      "company": {
+        "name": "Reddit, Inc.",
+        "logo": "https://media.licdn.com/dms/image/D560BAQFQPgrgVb19Kw/company-logo_200_200/0/1701361977074/reddit_com_logo?e=1720656000&v=beta&t=VvoleJGom5w63gquPL7-mepgEMb8q6oZ3nTCfhLUG_U",
+        "url": "https://www.linkedin.com/company/reddit-com/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "New York, NY",
+      "type": "Full-time",
+      "postDate": "1 month ago",
+      "benefits": "$190.8K/yr - $267.1K/yr · Vision, 401(k)"
+    },
+    {
+      "id": "3889005408",
+      "title": "GoLang Developer",
+      "url": "https://www.linkedin.com/jobs/view/3889005408",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "6520201",
+      "company": {
+        "name": "OpsMx",
+        "logo": "https://media.licdn.com/dms/image/C560BAQFNknVzYZQRcg/company-logo_200_200/0/1678374281651/opsmx_logo?e=1720656000&v=beta&t=UE2gr-oKJkmd3L8RwGLV3g7usmbcSZ4QUYurgnCnaAc",
+        "url": "https://www.linkedin.com/company/opsmx/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "India (Remote)",
+      "type": "Full-time",
+      "postDate": "15 hours ago"
+    },
+    {
+      "id": "3854524835",
+      "title": "Software Developer w/ Java and Golang",
+      "url": "https://www.linkedin.com/jobs/view/3854524835",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "909360539",
+      "company": {
+        "name": "Luxoft",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGEEw9HXvgGzA/company-logo_200_200/0/1639383759204/luxoft_logo?e=1720656000&v=beta&t=BTyKr45E_Q2GMKeKD5UxJ_Ptwv9mWp9Zhf7GwLo0eGg",
+        "url": "https://www.linkedin.com/company/luxoft/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "United States (Remote)",
+      "type": "Full-time",
+      "postDate": "4 weeks ago"
+    },
+    {
+      "id": "3881289108",
+      "title": "Golang Engineer",
+      "url": "https://www.linkedin.com/jobs/view/3881289108",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "541194303",
+      "company": {
+        "name": "ITCO Solutions, Inc.",
+        "logo": "https://media.licdn.com/dms/image/C510BAQFt7lMTh-x59A/company-logo_200_200/0/1631355720182?e=1720656000&v=beta&t=q9Upx37EWSPVhDbXRc9mXKrvcUq8pbKZFkOwU58JogY",
+        "url": "https://www.linkedin.com/company/itco-solutions-inc-/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "California, United States (Remote)",
+      "type": "Contract",
+      "postDate": "1 week ago"
+    },
+    {
+      "id": "3805293308",
+      "title": "Software Engineer (Golang)",
+      "url": "https://www.linkedin.com/jobs/view/3805293308",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "329377211",
+      "company": {
+        "name": "Tucows",
+        "logo": "https://media.licdn.com/dms/image/D560BAQH84wLWWoHVcg/company-logo_200_200/0/1709220623057/tucows_logo?e=1720656000&v=beta&t=Lzvpph8fsBKzJn3vrTr1Ihyeoy24jScxVfeB9D4XGOQ",
+        "url": "https://www.linkedin.com/company/tucows/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "United States (Remote)",
+      "type": "Full-time",
+      "postDate": "1 month ago"
+    },
+    {
+      "id": "3875970027",
+      "title": "Advanced Software Engineer - Golang",
+      "url": "https://www.linkedin.com/jobs/view/3875970027",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "35761819",
+      "company": {
+        "name": "Kroger",
+        "logo": "https://media.licdn.com/dms/image/C560BAQHss0K2NdDgcA/company-logo_200_200/0/1634131588725/kroger_logo?e=1720656000&v=beta&t=YTg5vZebQNDfW33kW0zvskM1ZKWTBwjaP1SU7AC6f_A",
+        "url": "https://www.linkedin.com/company/kroger/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "Boca Raton, FL (Hybrid)",
+      "type": "Full-time",
+      "postDate": "1 week ago",
+      "benefits": "$101K/yr - $177K/yr"
+    },
+    {
+      "id": "3888685069",
+      "title": "Golang Developer",
+      "url": "https://www.linkedin.com/jobs/view/3888685069",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "193866490",
+      "company": {
+        "name": "TekJobs",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGvn-ZFGz-bAA/company-logo_200_200/0/1630655339205?e=1720656000&v=beta&t=lNIvTyfdot7CePKyhyMVrdDjOdQE_D_rX5qhfdKYGT8",
+        "url": "https://www.linkedin.com/company/tekjobsofficial/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "United States (Remote)",
+      "type": "Full-time",
+      "postDate": "18 hours ago"
+    },
+    {
+      "id": "3857537411",
+      "title": "Golang Developer",
+      "url": "https://www.linkedin.com/jobs/view/3857537411",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "5502052",
+      "company": {
+        "name": "Dexian",
+        "logo": "https://media.licdn.com/dms/image/D560BAQF9NjWCbw276g/company-logo_200_200/0/1691690440423/dexiansolutions_logo?e=1720656000&v=beta&t=f2nhLeQu35lD5_rxx0w5ApQqTJO31WCaAMjxgw2DRKk",
+        "url": "https://www.linkedin.com/company/dexiansolutions/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "McLean, VA",
+      "type": "Contract",
+      "postDate": "3 weeks ago"
+    },
+    {
+      "id": "3732292808",
+      "title": "Golang Backend Engineer",
+      "url": "https://www.linkedin.com/jobs/view/3732292808",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "771495706",
+      "company": {
+        "name": "Eagle Eye Networks",
+        "logo": "https://media.licdn.com/dms/image/C560BAQHH8dknhi2AcA/company-logo_200_200/0/1630624281685/eagle_eye_networks_inc_logo?e=1720656000&v=beta&t=CxcvqWwH2JXcwcZkG-K_YkrG_XyvG9L-X0MV7AsyZnE",
+        "url": "https://www.linkedin.com/company/eagleeyenetworks/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "Austin, TX",
+      "type": "Full-time",
+      "postDate": "1 month ago",
+      "benefits": "401(k) benefit"
+    },
+    {
+      "id": "3862836829",
+      "title": "Golang Developer",
+      "url": "https://www.linkedin.com/jobs/view/3862836829",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "101403366",
+      "company": {
+        "name": "Tech Holding",
+        "logo": "https://media.licdn.com/dms/image/C560BAQFImPy8cQP3MA/company-logo_200_200/0/1631435545457/tech_holding_logo?e=1720656000&v=beta&t=r2hy9xdNxu8s7ezyrJWSruJ95YUkJsuA-ktWDJ89O-0",
+        "url": "https://www.linkedin.com/company/techholding/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "United States (Remote)",
+      "type": "Full-time",
+      "postDate": "3 weeks ago",
+      "benefits": "$75K/yr - $100K/yr · 401(k) benefit"
+    },
+    {
+      "id": "3855970905",
+      "title": "Full Stack developer with Golang",
+      "url": "https://www.linkedin.com/jobs/view/3855970905",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "385831189",
+      "company": {
+        "name": "Miracle Software Systems, Inc",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQEd5YuI5_Ny3w/company-logo_200_200/0/1630575532780/miraclesoftwaresystems_logo?e=1720656000&v=beta&t=ZrQDp9ARH7senKqDQQ5dOF0fI9pOiK_eUeHCXOPT7YQ",
+        "url": "https://www.linkedin.com/company/miraclesoft/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "United States (Remote)",
+      "type": "Full-time",
+      "postDate": "4 weeks ago"
+    },
+    {
+      "id": "3887780307",
+      "title": "GoLang Developer ",
+      "url": "https://www.linkedin.com/jobs/view/3887780307",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "981335004",
+      "company": {
+        "name": "Compunnel Inc.",
+        "logo": "https://media.licdn.com/dms/image/D4D0BAQHmwSIps5MtHQ/company-logo_200_200/0/1691391249680/compunnel_software_group_logo?e=1720656000&v=beta&t=NNXCB3myNUO7dDrvJXaDTVDacJgVAxz7DlEVdb765DI",
+        "url": "https://www.linkedin.com/company/compunnel-software-group/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "Durham, NC (Hybrid)",
+      "type": "Full-time",
+      "postDate": "5 days ago"
+    },
+    {
+      "id": "3888683608",
+      "title": "Golang Developer",
+      "url": "https://www.linkedin.com/jobs/view/3888683608",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "193866490",
+      "company": {
+        "name": "TekJobs",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGvn-ZFGz-bAA/company-logo_200_200/0/1630655339205?e=1720656000&v=beta&t=lNIvTyfdot7CePKyhyMVrdDjOdQE_D_rX5qhfdKYGT8",
+        "url": "https://www.linkedin.com/company/tekjobsofficial/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "United States (Remote)",
+      "type": "Full-time",
+      "postDate": "18 hours ago"
+    },
+    {
+      "id": "3847747667",
+      "title": "Senior Backend Engineer, GraphQL",
+      "url": "https://www.linkedin.com/jobs/view/3847747667",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "421266878",
+      "company": {
+        "name": "Reddit, Inc.",
+        "logo": "https://media.licdn.com/dms/image/D560BAQFQPgrgVb19Kw/company-logo_200_200/0/1701361977074/reddit_com_logo?e=1720656000&v=beta&t=VvoleJGom5w63gquPL7-mepgEMb8q6oZ3nTCfhLUG_U",
+        "url": "https://www.linkedin.com/company/reddit-com/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "Chicago, IL",
+      "type": "Full-time",
+      "postDate": "1 month ago",
+      "benefits": "$190.8K/yr - $267.1K/yr · Vision, 401(k)"
+    },
+    {
+      "id": "3878809908",
+      "title": "Golang developer ",
+      "url": "https://www.linkedin.com/jobs/view/3878809908",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "1192853905",
+      "company": {
+        "name": "Quiddity Infotech LLC",
+        "logo": "https://media.licdn.com/dms/image/C510BAQEqQOGOsXDcEQ/company-logo_200_200/0/1630598824965/quiddity_infotech_llp_logo?e=1720656000&v=beta&t=RidPOtgygq2_QgdbCahzQNwQKyaP2nQziSvHSPaoZ20",
+        "url": "https://www.linkedin.com/company/quiddity-infotech-llp/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "Texas, United States (On-site)",
+      "type": "Contract",
+      "postDate": "1 week ago"
+    },
+    {
+      "id": "3883715841",
+      "title": "Golang Developer",
+      "url": "https://www.linkedin.com/jobs/view/3883715841",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "299872473",
+      "company": {
+        "name": "American Unit, Inc",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGizuNiwCHRww/company-logo_200_200/0/1631333177379?e=1720656000&v=beta&t=FiRkMRpHDXApYP7WHP4W6DBBBa12h_v6QkrmatADgMU",
+        "url": "https://www.linkedin.com/company/american-unit-inc/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "McLean, VA (On-site)",
+      "type": "Contract",
+      "postDate": "1 week ago"
+    },
+    {
+      "id": "3892470745",
+      "title": "Golang Engineer",
+      "url": "https://www.linkedin.com/jobs/view/3892470745",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "333723894",
+      "company": {
+        "name": "Calyptus",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQFoN8RpG4IJuw/company-logo_200_200/0/1711971161367/calyptus_web3_logo?e=1720656000&v=beta&t=sYPVkr_wSmRy_euImPf6bdpkNaLCNUEW5VT2Fl40nGI",
+        "url": "https://www.linkedin.com/company/calyptus-web3/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "United Arab Emirates (Remote)",
+      "type": "Full-time",
+      "postDate": "17 hours ago"
+    },
+    {
+      "id": "3847649515",
+      "title": "USA Software Engineer (GoLang)",
+      "url": "https://www.linkedin.com/jobs/view/3847649515",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "212109778",
+      "company": {
+        "name": "Intelygenz",
+        "logo": "https://media.licdn.com/dms/image/D4D0BAQHAT9Gf-t2P5Q/company-logo_200_200/0/1707125194473/intelygenz_logo?e=1720656000&v=beta&t=app_sfJz5SXAUileWUv812mIt7v9Z_F6Ir_C1ZqkDXk",
+        "url": "https://www.linkedin.com/company/intelygenz/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "San Francisco Bay Area",
+      "type": "Full-time",
+      "postDate": "1 month ago"
+    },
+    {
+      "id": "3770813488",
+      "title": "Senior Software Engineer - Backend",
+      "url": "https://www.linkedin.com/jobs/view/3770813488",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "423034195",
+      "company": {
+        "name": "Character.AI",
+        "logo": "https://media.licdn.com/dms/image/C560BAQFnYb3w5mQMKQ/company-logo_200_200/0/1679554051094/character_ai_logo?e=1720656000&v=beta&t=T3_nY6HyNcMZkYOKuE9i40fNv3N_eFxMmZG-Mr-C_Pk",
+        "url": "https://www.linkedin.com/company/character-ai/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "Menlo Park, CA (Hybrid)",
+      "type": "Full-time",
+      "postDate": "1 month ago"
+    },
+    {
+      "id": "3868493404",
+      "title": "Golang Developer",
+      "url": "https://www.linkedin.com/jobs/view/3868493404",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "93306943",
+      "company": {
+        "name": "LTIMindtree",
+        "logo": "https://media.licdn.com/dms/image/D4D0BAQH26vEc2KRwsQ/company-logo_200_200/0/1704351215489?e=1720656000&v=beta&t=9h8B8rD9sXa4MnvUOd8-JCqxI2JrFzqq3fm12thm4ds",
+        "url": "https://www.linkedin.com/company/ltimindtree/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "Phoenix, AZ (Hybrid)",
+      "type": "Full-time",
+      "postDate": "2 weeks ago",
+      "benefits": "$110K/yr - $120K/yr · 401(k), +1 benefit"
+    },
+    {
+      "id": "3887028812",
+      "title": "Go lang Developer",
+      "url": "https://www.linkedin.com/jobs/view/3887028812",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "735333604",
+      "company": {
+        "name": "Infosys",
+        "logo": "https://media.licdn.com/dms/image/D4D0BAQE7Zf1-vvfbUA/company-logo_200_200/0/1692876768583/infosys_logo?e=1720656000&v=beta&t=U0am4z49ka3U4e0B_I4bEDNbuoYqRnJryM9NBTGkigs",
+        "url": "https://www.linkedin.com/company/infosys/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "United States (Remote)",
+      "type": "Full-time",
+      "postDate": "2 days ago"
+    },
+    {
+      "id": "3816836972",
+      "title": "Principal Staff Software Engineer",
+      "url": "https://www.linkedin.com/jobs/view/3816836972",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "185359494",
+      "company": {
+        "name": "LinkedIn",
+        "logo": "https://media.licdn.com/dms/image/C560BAQHaVYd13rRz3A/company-logo_200_200/0/1638831590218/linkedin_logo?e=1720656000&v=beta&t=h3JC5Ks1UNUdZ06h9l1bQJBVF0Wmtxi_RjriWxY467Y",
+        "url": "https://www.linkedin.com/company/linkedin/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "Sunnyvale, CA (Hybrid)",
+      "type": "Full-time",
+      "postDate": "2 weeks ago",
+      "benefits": "11 benefits"
+    },
+    {
+      "id": "3880118280",
+      "title": "Golang developer (Frontend) ",
+      "url": "https://www.linkedin.com/jobs/view/3880118280",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "1192853905",
+      "company": {
+        "name": "Quiddity Infotech LLC",
+        "logo": "https://media.licdn.com/dms/image/C510BAQEqQOGOsXDcEQ/company-logo_200_200/0/1630598824965/quiddity_infotech_llp_logo?e=1720656000&v=beta&t=RidPOtgygq2_QgdbCahzQNwQKyaP2nQziSvHSPaoZ20",
+        "url": "https://www.linkedin.com/company/quiddity-infotech-llp/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "Texas, United States (On-site)",
+      "type": "Contract",
+      "postDate": "1 week ago"
+    },
+    {
+      "id": "3856612976",
+      "title": "Sr. Backend Software Engineer, Tesla App Energy",
+      "url": "https://www.linkedin.com/jobs/view/3856612976",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "239146623",
+      "company": {
+        "name": "Tesla",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHUcu98SZ2TVw/company-logo_200_200/0/1630576446368/tesla_motors_logo?e=1720656000&v=beta&t=pJ5yMInUzDjBqRlyL4gLNeHeSH5RPXBv-L_zLHvCR_E",
+        "url": "https://www.linkedin.com/company/tesla-motors/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "Palo Alto, CA (On-site)",
+      "type": "Full-time",
+      "postDate": "3 weeks ago",
+      "benefits": "401(k), +2 benefits"
+    },
+    {
+      "id": "3881984688",
+      "title": "Golang developer (Frontend) ",
+      "url": "https://www.linkedin.com/jobs/view/3881984688",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "1192853905",
+      "company": {
+        "name": "Quiddity Infotech LLC",
+        "logo": "https://media.licdn.com/dms/image/C510BAQEqQOGOsXDcEQ/company-logo_200_200/0/1630598824965/quiddity_infotech_llp_logo?e=1720656000&v=beta&t=RidPOtgygq2_QgdbCahzQNwQKyaP2nQziSvHSPaoZ20",
+        "url": "https://www.linkedin.com/company/quiddity-infotech-llp/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "Texas, United States (On-site)",
+      "type": "Contract",
+      "postDate": "6 days ago"
+    },
+    {
+      "id": "3831942018",
+      "title": "Software Engineer (L5) - Cloud Games Infrastructure",
+      "url": "https://www.linkedin.com/jobs/view/3831942018",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "368130583",
+      "company": {
+        "name": "Netflix",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQEVb0ZISWk8vQ/company-logo_200_200/0/1631355051964?e=1720656000&v=beta&t=54T38k0u0OjdpL_qwGQMj3IJqhEPw8VdQUZFHkIsjuk",
+        "url": "https://www.linkedin.com/company/netflix/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "Los Gatos, CA",
+      "type": "Full-time",
+      "postDate": "1 week ago",
+      "benefits": "$300K/yr - $600K/yr · 401(k) benefit"
+    },
+    {
+      "id": "3889708600",
+      "title": "Software Engineer Specialist - Golang",
+      "url": "https://www.linkedin.com/jobs/view/3889708600",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "103591256",
+      "company": {
+        "name": "iFood",
+        "logo": "https://media.licdn.com/dms/image/C510BAQFupNOyDYF1sg/company-logo_200_200/0/1631315877254?e=1720656000&v=beta&t=pNCVljEqTfz5Vae-9fEHBknrdeMYn_q3BD5BE_iJJ6g",
+        "url": "https://www.linkedin.com/company/ifood-/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "Brazil (Remote)",
+      "type": "Full-time",
+      "postDate": "1 day ago"
+    },
+    {
+      "id": "3869454876",
+      "title": "sr, golang developer",
+      "url": "https://www.linkedin.com/jobs/view/3869454876",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "51998688",
+      "company": {
+        "name": "Sonata Software",
+        "logo": "https://media.licdn.com/dms/image/C560BAQHHd1lirm-LdQ/company-logo_200_200/0/1630564371387/sonata_software_logo?e=1720656000&v=beta&t=SYFkEkidzXNRSOlGTksv4A4iffO94FpT0_Afm-pc9k0",
+        "url": "https://www.linkedin.com/company/sonata-software/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "Boston, MA (On-site)",
+      "type": "Full-time",
+      "postDate": "2 weeks ago"
+    },
+    {
+      "id": "3869632396",
+      "title": "Software Engineer - GoLang",
+      "url": "https://www.linkedin.com/jobs/view/3869632396",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "65364620",
+      "company": {
+        "name": "Tandym Group",
+        "logo": "https://media.licdn.com/dms/image/D4E0BAQHqsy9NUdiZzA/company-logo_200_200/0/1688226477413/tandymgroup_logo?e=1720656000&v=beta&t=jkBbJ0TPUyJLC7E2ZIMC3TGx2Uj8lDAvOWeyBYMiWpU",
+        "url": "https://www.linkedin.com/company/tandymgroup/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "New York, NY (On-site)",
+      "type": "Full-time",
+      "postDate": "2 weeks ago"
+    },
+    {
+      "id": "3811448788",
+      "title": "Internship, Software Tools Developer, Integration Platforms (Fall 2024)",
+      "url": "https://www.linkedin.com/jobs/view/3811448788",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "239146623",
+      "company": {
+        "name": "Tesla",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQHUcu98SZ2TVw/company-logo_200_200/0/1630576446368/tesla_motors_logo?e=1720656000&v=beta&t=pJ5yMInUzDjBqRlyL4gLNeHeSH5RPXBv-L_zLHvCR_E",
+        "url": "https://www.linkedin.com/company/tesla-motors/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "Palo Alto, CA (On-site)",
+      "type": "Internship",
+      "postDate": "2 weeks ago",
+      "benefits": "2 benefits"
+    },
+    {
+      "id": "3890659423",
+      "title": "Golang Developer",
+      "url": "https://www.linkedin.com/jobs/view/3890659423",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "company": {
+        "name": "Mobius Digital",
+        "logo": "https://media.licdn.com/dms/image/D560BAQE1ZvGSwfRspw/company-logo_200_200/0/1697535031080/mobi_digi_logo?e=1720656000&v=beta&t=G9uxHlMGwijlDqexBYgczjCCWaPYSNkk23FoAgOqLJA",
+        "url": "https://www.linkedin.com/company/mobi-digi/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "West Jakarta, Jakarta, Indonesia",
+      "type": "Full-time",
+      "postDate": "1 day ago"
+    },
+    {
+      "id": "3823898342",
+      "title": "Senior Software Engineer",
+      "url": "https://www.linkedin.com/jobs/view/3823898342",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "452968160",
+      "company": {
+        "name": "Zscaler",
+        "logo": "https://media.licdn.com/dms/image/D560BAQFyKYkPLfu8OQ/company-logo_200_200/0/1688573892674/zscaler_logo?e=1720656000&v=beta&t=qacBGugW4SiKHjMUVklfRnipaneUI3hYSJlNa0etv4g",
+        "url": "https://www.linkedin.com/company/zscaler/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "California, United States (Remote)",
+      "type": "Full-time",
+      "postDate": "1 month ago",
+      "benefits": "$148.8K/yr - $175K/yr"
+    },
+    {
+      "id": "3882369424",
+      "title": "Golang Developer",
+      "url": "https://www.linkedin.com/jobs/view/3882369424",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "485800965",
+      "company": {
+        "name": "Insight Global",
+        "logo": "https://media.licdn.com/dms/image/C560BAQGUNIyRZFaj0g/company-logo_200_200/0/1657049194702/insight_global_logo?e=1720656000&v=beta&t=nC7F8rul3a9tb4vcv7aDZggdHZ39jcBbJnFZrSm0x2o",
+        "url": "https://www.linkedin.com/company/insight-global/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "New York, United States (Hybrid)",
+      "type": "Contract",
+      "postDate": "6 days ago",
+      "benefits": "$55/hr - $75/hr"
+    },
+    {
+      "id": "3878829486",
+      "title": "Principal Staff Software Engineer, Distributed Storage Infra ",
+      "url": "https://www.linkedin.com/jobs/view/3878829486",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "9663628",
+      "company": {
+        "name": "LinkedIn",
+        "logo": "https://media.licdn.com/dms/image/C560BAQHaVYd13rRz3A/company-logo_200_200/0/1638831590218/linkedin_logo?e=1720656000&v=beta&t=h3JC5Ks1UNUdZ06h9l1bQJBVF0Wmtxi_RjriWxY467Y",
+        "url": "https://www.linkedin.com/company/linkedin/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "Mountain View, CA (Hybrid)",
+      "type": "Full-time",
+      "postDate": "1 week ago",
+      "benefits": "10 benefits"
+    },
+    {
+      "id": "3855710223",
+      "title": "Back End Developer",
+      "url": "https://www.linkedin.com/jobs/view/3855710223",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "722468842",
+      "company": {
+        "name": "Venturi",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQEQIXMFEC_EWQ/company-logo_200_200/0/1656940832352/venturigroup_logo?e=1720656000&v=beta&t=RcWyD4bjk1r4H5y1of1z4_n_cnRxyP4d2LIlwVvVwPU",
+        "url": "https://www.linkedin.com/company/venturigroup/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "United States (Remote)",
+      "type": "Full-time",
+      "postDate": "3 weeks ago",
+      "benefits": "$180K/yr - $200K/yr + Stock"
+    },
+    {
+      "id": "3885145530",
+      "title": "Golang Developer",
+      "url": "https://www.linkedin.com/jobs/view/3885145530",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "771862404",
+      "company": {
+        "name": "The IT Gigs",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQEWEODKL3U-PA/company-logo_200_200/0/1668456428963?e=1720656000&v=beta&t=HIRWMgOeqnASYwt-FewF_w5ghk6PjTRySKXP760GEpo",
+        "url": "https://www.linkedin.com/company/theitgigs/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "Phoenix, AZ (On-site)",
+      "type": "Full-time",
+      "postDate": "2 days ago"
+    },
+    {
+      "id": "3862013575",
+      "title": "Cloud Software Engineer",
+      "url": "https://www.linkedin.com/jobs/view/3862013575",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "45950923",
+      "company": {
+        "name": "Toyota North America",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFnFvbjs_Nuag/company-logo_200_200/0/1631301290760?e=1720656000&v=beta&t=ioL6h8Jp4MbB6pe0WpCycEQHCk-n2oF5uKQ18rTVJi4",
+        "url": "https://www.linkedin.com/company/toyota-north-america/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "Plano, TX (Hybrid)",
+      "type": "Full-time",
+      "postDate": "3 weeks ago",
+      "benefits": "$75/hr - $82/hr · 401(k) benefit"
+    },
+    {
+      "id": "3892486722",
+      "title": "Golang developer",
+      "url": "https://www.linkedin.com/jobs/view/3892486722",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "213283145",
+      "company": {
+        "name": "HCLTech",
+        "logo": "https://media.licdn.com/dms/image/C4D0BAQF-RIoeeMTMKQ/company-logo_200_200/0/1664197008219/hcltech_logo?e=1720656000&v=beta&t=crzjkXDsajJA7VSx7LJT1wn9sSrg8-nQA6ighL0hyMQ",
+        "url": "https://www.linkedin.com/company/hcltech/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "Mexico (Remote)",
+      "type": "Full-time",
+      "postDate": "16 hours ago"
+    },
+    {
+      "id": "3892514721",
+      "title": "Golang Engineer",
+      "url": "https://www.linkedin.com/jobs/view/3892514721",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "522181717",
+      "company": {
+        "name": "Go Tek",
+        "logo": "https://media.licdn.com/dms/image/D560BAQEB2ugkzeCTEQ/company-logo_200_200/0/1684422809585/go_tek_logo?e=1720656000&v=beta&t=h8WUQRuOySOewejA_yEzGwePOVbQerh0vWfGvF9o6Ac",
+        "url": "https://www.linkedin.com/company/go-tek/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "Germany (Remote)",
+      "type": "Full-time",
+      "postDate": "15 hours ago"
+    },
+    {
+      "id": "3875964382",
+      "title": "Lead Software Engineer - Golang",
+      "url": "https://www.linkedin.com/jobs/view/3875964382",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "35761819",
+      "company": {
+        "name": "Kroger",
+        "logo": "https://media.licdn.com/dms/image/C560BAQHss0K2NdDgcA/company-logo_200_200/0/1634131588725/kroger_logo?e=1720656000&v=beta&t=YTg5vZebQNDfW33kW0zvskM1ZKWTBwjaP1SU7AC6f_A",
+        "url": "https://www.linkedin.com/company/kroger/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "Cincinnati, OH (Hybrid)",
+      "type": "Full-time",
+      "postDate": "1 week ago",
+      "benefits": "$101K/yr - $177K/yr + Bonus, Stock options"
+    },
+    {
+      "id": "3852375883",
+      "title": "Sr. Golang Developer",
+      "url": "https://www.linkedin.com/jobs/view/3852375883",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "706313794",
+      "company": {
+        "name": "Agile Resources, Inc.",
+        "logo": "https://media.licdn.com/dms/image/C560BAQHgr0lRdzN9Aw/company-logo_200_200/0/1630635258525/agile_resources_inc__logo?e=1720656000&v=beta&t=fcttY6VMPeobC_X1TxxGJAosJWwlSPSFr79ECHbI3ow",
+        "url": "https://www.linkedin.com/company/agile-resources-inc-/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "Atlanta Metropolitan Area (Hybrid)",
+      "type": "Contract",
+      "postDate": "4 weeks ago",
+      "benefits": "$90/hr - $105/hr"
+    },
+    {
+      "id": "3884918695",
+      "title": "Golang Full Stack Developer",
+      "url": "https://www.linkedin.com/jobs/view/3884918695",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "5283464",
+      "company": {
+        "name": "Pinnacle Group, Inc.",
+        "logo": "https://media.licdn.com/dms/image/D4D0BAQFtNFJ1w0-d2g/company-logo_200_200/0/1695230847337/pinnacle_technical_resources_logo?e=1720656000&v=beta&t=5Ivf0X-TEqehBkZv9WNwu5VE9fS4i16n79ZOBQYxxpk",
+        "url": "https://www.linkedin.com/company/pinnacle-technical-resources/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "Seattle, WA",
+      "type": "Contract",
+      "postDate": "5 days ago",
+      "benefits": "$80/hr - $85/hr"
+    },
+    {
+      "id": "3889974572",
+      "title": "Golang Developer",
+      "url": "https://www.linkedin.com/jobs/view/3889974572",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "1137546512",
+      "company": {
+        "name": "Devlats Pvt Ltd",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQFyk_AKHV1xuQ/company-logo_200_200/0/1670997991914?e=1720656000&v=beta&t=cTnA5HqLag65Cra10DSWU7nIbACadiB4vQXN9QaOcqU",
+        "url": "https://www.linkedin.com/company/devlats-pvt-ltd/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "India (Remote)",
+      "type": "Full-time",
+      "postDate": "28 minutes ago"
+    },
+    {
+      "id": "3890767990",
+      "title": "Golang developer",
+      "url": "https://www.linkedin.com/jobs/view/3890767990",
+      "referenceId": "udYFrqUbraBbI9WHPk9j0Q==",
+      "posterId": "120104706",
+      "company": {
+        "name": "Woolsocks",
+        "logo": "https://media.licdn.com/dms/image/C4E0BAQF-tTn-vgOEVA/company-logo_200_200/0/1656575495967/woolsocks_logo?e=1720656000&v=beta&t=iLmwsubyLPWMSKhFpDBJsf2xYiOSA8LgMshr1N3noj8",
+        "url": "https://www.linkedin.com/company/woolsocks/life",
+        "staffCountRange": {},
+        "headquarter": {}
+      },
+      "location": "Romania (Remote)",
+      "type": "Full-time",
+      "postDate": "21 hours ago"
+    }
+  ],
+  "total": 132456
+}
