@@ -1,6 +1,7 @@
 package com.example.integration.model;
 
 import com.example.integration.entity.Job;
+import com.example.integration.enumerator.JobType;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -29,13 +30,12 @@ public class JobSummary {
         job.setUrl(this.getUrl());
         job.setCompany(this.getCompany() != null ? this.getCompany().getName() : null);
         job.setLocation(this.getLocation());
-        job.setType(this.getType());
+        job.setType(JobType.valueOf(this.getType()));
         job.setListedAtDate(parsePostDate(this.getPostDate()));
         job.setState("UNKNOWN");
         job.setDescription("No description");
 
         job.setClosed(false);
-        job.setFormattedExperienceLevel("UNKNOWN");
         return job;
     }
 

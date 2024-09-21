@@ -10,8 +10,10 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.UniqueConstraint;
 import lombok.Data;
+import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity
 @Data
@@ -29,7 +31,9 @@ public class CheckedJob {
     @JoinColumn(name = "tenant_id", nullable = false)
     private Tenant tenant;
 
-    private LocalDate localDate;
+    @CreationTimestamp
+    @Column(updatable = false)
+    private LocalDateTime addedDateTime;
 
     @Column(columnDefinition = "LONGTEXT")
     private String reasonToSkip;

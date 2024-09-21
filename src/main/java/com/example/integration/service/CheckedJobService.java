@@ -33,7 +33,6 @@ public class CheckedJobService {
         if (existingCheckedJob.isPresent()) {
             return existingCheckedJob.get();
         }
-        checkedJob.setLocalDate(LocalDate.now());
         return checkedJobRepository.save(checkedJob);
     }
 
@@ -54,7 +53,7 @@ public class CheckedJobService {
     }
 
     public List<CheckedJob> findByTenantIdAndLocalDate(long id, LocalDate localDate){
-        return checkedJobRepository.findByTenantIdAndLocalDate(id, localDate);
+        return checkedJobRepository.findAllByTenantIdAndLocalDate(id, localDate);
     }
 
     public boolean isJobCheckedAndDuplicated(Long tenantId, Job job) {

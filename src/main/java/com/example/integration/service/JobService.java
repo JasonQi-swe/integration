@@ -28,7 +28,6 @@ public class JobService {
     }
 
     public Job save(Job job) {
-        job.setAddedDate(LocalDate.now());
         return jobRepository.save(job);
     }
 

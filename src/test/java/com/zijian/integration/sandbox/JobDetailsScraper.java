@@ -1,4 +1,4 @@
-package com.example.integration.sandbox;
+package com.zijian.integration.sandbox;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -16,6 +16,7 @@ public class JobDetailsScraper {
         Document doc = null;
         for (int i = 0; i < maxRetries; i++) {
             try {
+                // Fetch the HTML content from the URL with increased timeout
                 doc = Jsoup.connect(url).timeout(timeoutMillis).get();
                 break;
             } catch (IOException e) {
@@ -35,8 +36,10 @@ public class JobDetailsScraper {
         }
 
         if (doc != null) {
+            // Retrieve the element with id="job-details"
             Element jobDetailsElement = doc.getElementById("job-details");
 
+            // Print the content of the job details element
             if (jobDetailsElement != null) {
                 System.out.println("Job Details:");
                 System.out.println(jobDetailsElement.text());

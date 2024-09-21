@@ -51,7 +51,7 @@ public class JobController {
             jobToUpdate.setType(jobDetails.getType());
             jobToUpdate.setClosed(jobDetails.isClosed());
             jobToUpdate.setListedAtDate(jobDetails.getListedAtDate());
-            jobToUpdate.setFormattedExperienceLevel(jobDetails.getFormattedExperienceLevel());
+            jobToUpdate.setExperienceLevel(jobDetails.getExperienceLevel());
             return ResponseEntity.ok(jobService.save(jobToUpdate));
         } else {
             return ResponseEntity.notFound().build();

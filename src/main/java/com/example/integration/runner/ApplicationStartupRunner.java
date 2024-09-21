@@ -10,6 +10,8 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.security.GeneralSecurityException;
+import java.util.ArrayList;
+import java.util.List;
 
 @Component
 @Slf4j
@@ -24,12 +26,11 @@ public class ApplicationStartupRunner implements CommandLineRunner {
     @Autowired
     private GoogleSheetsService googleSheetsService;
 
-
     @Override
     public void run(String... args) throws Exception {
-        //List<Long> list = new ArrayList<>();
-        //list.add(1L);
-        //jobScheduler.runJobNow(list);
+//        List<Long> list = new ArrayList<>();
+//        list.add(4L);
+//        jobScheduler.runJobNow(list);
         //jobScheduler.testNow();
 
         //createReport();

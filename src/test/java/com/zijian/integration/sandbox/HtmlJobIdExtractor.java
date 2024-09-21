@@ -1,4 +1,4 @@
-package com.example.integration.sandbox;
+package com.zijian.integration.sandbox;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -30,7 +30,7 @@ public class HtmlJobIdExtractor {
     }
 
     public static void main(String[] args) {
-        List<String> result = extractJobIds("/integration/src/main/resources/response/search-job-java-24h-sto3.html");
+        List<String> result = extractJobIds("");
         System.out.println(result);
         System.out.println(result.size());
     }

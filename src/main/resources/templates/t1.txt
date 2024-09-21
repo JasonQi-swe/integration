@@ -1,0 +1,7 @@
+i am looking for jobs. Firstly, i only want to work with java or angular(typescript), not other programming languages. Secondly, I am locating at Sweden but some jobs only available for some locations. try to simply your answer.
+
+Output requirements:
+1. tell me Yes, only is both programming language and location are fine for me.
+2. give me a summary after you answer YES or NO.
+
+is this job valid:

@@ -39,10 +39,9 @@ public class ApplicationService {
     public Application save(Application application) {
         List<Application> existingApplication = applicationRepository.findAllByTenantIdAndJobId(application.getTenant().getId(), application.getJob().getId());
         if(existingApplication.size() > 0){
-            log.info("Application with jobid {} tenantId {} exists already",application.getTenant().getId(), application.getJob().getId());
+            log.info("Application with jobid {} tenantId {} exists already", application.getJob().getId(), application.getTenant().getId());
             return existingApplication.get(0);
         }
-        application.setLocalDate(LocalDate.now());
         return applicationRepository.save(application);
     }
 
@@ -71,6 +70,7 @@ public class ApplicationService {
             Optional<Application> duplicateApplication = applicationRepository.findDuplicateApplication(jobTitle, jobCompany, tenantId);
             return duplicateApplication.isPresent();
         } else {
+            // Job not found, cannot check for duplication
             return false;
         }
     }

@@ -1,4 +1,4 @@
-package com.example.integration.sandbox;
+package com.zijian.integration.sandbox;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -35,7 +35,7 @@ public class JsonIdChecker {
 
         String idsString = "3967652661, 3949443993, 3968522216, 3985944850, 3985949035, 3985948161, 3968157351, 3965447727, 3967659436, 3967687573, 3927802963, 3967904091, 3945503921, 3968567614, 3967675681, 3968561359, 3968138737, 3967898197, 3949713465, 3965427750, 3983531737, 3965445949";
 
-        String jsonFilePath = "/Users/exampleqi/Documents/GitHub/integration/src/main/resources/response/search-job-java-24h-stockholm2.json";
+        String jsonFilePath = "";
 
         List<String> idsList = Arrays.asList(idsString.trim().split("\\s*,\\s*"));
 

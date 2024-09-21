@@ -1,12 +1,15 @@
-package com.example.integration.sandbox;
+package com.zijian.integration.sandbox;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+
+// after got the element with class jobs-description__container  jobs-description__container--condensed
 public class parseDescription {
 
     public static void main(String[] args) {
+        // Example HTML input
         String html = """
                 <article class="jobs-description__container
                           jobs-description__container--condensed">
@@ -28,10 +31,13 @@ public class parseDescription {
                       </article>
                 """;
 
+        // Parse the HTML using Jsoup
         Document doc = Jsoup.parse(html);
 
+        // Extract the content from the specified element
         Elements contentElements = doc.select("article.jobs-description__container");
 
+        // Print the content
         for (Element element : contentElements) {
             Elements spans = element.select("span");
             for (Element span : spans) {

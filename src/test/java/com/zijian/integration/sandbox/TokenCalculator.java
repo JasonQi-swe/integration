@@ -1,4 +1,4 @@
-package com.example.integration.sandbox;
+package com.zijian.integration.sandbox;
 
 import com.knuddels.jtokkit.Encodings;
 import com.knuddels.jtokkit.api.Encoding;

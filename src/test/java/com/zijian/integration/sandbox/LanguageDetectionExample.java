@@ -1,4 +1,4 @@
-package com.example.integration.sandbox;
+package com.zijian.integration.sandbox;
 
 import org.apache.tika.langdetect.optimaize.OptimaizeLangDetector;
 import org.apache.tika.language.detect.LanguageDetector;

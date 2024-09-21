@@ -1,12 +1,17 @@
 package com.example.integration.entity;
 
+import com.example.integration.enumerator.ExperienceLevel;
+import com.example.integration.enumerator.JobType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -23,20 +28,25 @@ public class Job {
     @Builder.Default
     private String state = "Unknown"; //maybe change to enum later
 
-    @Column(columnDefinition = "LONGTEXT")
+    @Column(columnDefinition = "LONGTEXT", nullable = false)
     private String description;
     private String url;
     private String company;
     private String location;
-    private String type; //maybe change to enum later,  full-time, part-time, contract, internship
+
+    @Enumerated(EnumType.STRING)
+    private JobType type;
     private boolean closed;
     private String languageName;
     //workRemoteAllowed or workPlace
     private LocalDateTime listedAtDate;
 
-    @Builder.Default
-    private String formattedExperienceLevel = "Unknown"; // maybe change to enum later
+    @Enumerated(EnumType.STRING)
+    private ExperienceLevel experienceLevel;
 
-    private LocalDate addedDate;
+    @CreationTimestamp
+    @Column(updatable = false)
+    private LocalDateTime addedDateTime;
+
     private String source;
 }

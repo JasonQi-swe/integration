@@ -2,7 +2,7 @@ package com.example.integration.service;
 
 import com.example.integration.model.Answer;
 import com.example.integration.model.Question;
-import com.example.integration.enumerator.AIModel;
+import com.knuddels.jtokkit.api.ModelType;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.ai.autoconfigure.openai.OpenAiChatProperties;
 import org.springframework.ai.chat.ChatResponse;
@@ -15,7 +15,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Slf4j
-public class  AIService {
+public class AIService {
 
     private final OpenAiChatClient openAiChatClient;
     private final OpenAiChatProperties openAiChatProperties;
@@ -26,10 +26,10 @@ public class  AIService {
         this.openAiChatProperties = openAiChatProperties;
     }
 
-    public Answer getAnswer(Question question, AIModel model) {
+    public Answer getAnswer(Question question, ModelType model) {
         OpenAiChatOptions openAiChatOptions = new OpenAiChatOptions.Builder(openAiChatProperties.getOptions())
                 .withTemperature(0.6f)
-                .withModel(model.getVersionName())
+                .withModel(model.getName())
                 .build();
 
         PromptTemplate promptTemplate = new PromptTemplate(question.question());

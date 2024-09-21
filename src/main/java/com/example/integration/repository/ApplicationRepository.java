@@ -14,9 +14,10 @@ import java.util.Optional;
 public interface ApplicationRepository extends JpaRepository<Application, Long> {
     List<Application> findByTenantId(Long tenantId);
 
-    List<Application> findAllByTenantIdAndLocalDate(Long tenantId, LocalDate date);
-
     List<Application> findAllByTenantIdAndJobId(Long tenantId, Long jobId);
+
+    @Query("SELECT a FROM Application a WHERE a.tenant.id = :tenantId AND DATE(a.addedDateTime) = :date")
+    List<Application> findAllByTenantIdAndLocalDate(@Param("tenantId") Long tenantId, @Param("date") LocalDate date);
 
     @Query("SELECT a FROM Application a WHERE a.job.title = :jobTitle AND a.job.company = :jobCompany AND a.tenant.id = :tenantId")
     Optional<Application> findDuplicateApplication(@Param("jobTitle") String jobTitle, @Param("jobCompany") String jobCompany, @Param("tenantId") Long tenantId);

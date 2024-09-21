@@ -54,6 +54,9 @@ public class GoogleSheetsService {
     @Autowired
     private CheckedJobService checkedJobService;
 
+    @Autowired
+    private JobService jobService;
+
     public GoogleSheetsService() throws GeneralSecurityException, IOException {
         NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
         this.sheetsService = new Sheets.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
@@ -72,6 +75,7 @@ public class GoogleSheetsService {
         }else{
             log.error("Failed to create report for tenant {}", tenantId);
         }
+
         Spreadsheet spreadsheet = this.createSpreadsheet(tenant.getUserName() + "_" + LocalDate.now());
 
         List<List<Object>> values = new ArrayList<>();
@@ -81,14 +85,30 @@ public class GoogleSheetsService {
 
         for (Application application : applications) {
             Job job = application.getJob();
-            values.add(List.of(
-                    tenant.getUserName(),
-                    job.getId().toString(),
-                    job.getTitle() == null? job.getTitle(): " ",
-                    job.getUrl(),
-                    application.getCoverLetter(),
-                    application.getReasonToSelect()
-            ));
+            String title = jobService.findById(Long.valueOf(job.getId().toString())).get().getTitle();
+            String userName = tenant.getUserName();
+            String jobId = job.getId() != null ? job.getId().toString() : null;
+            String jobUrl = job.getUrl();
+            String coverLetter = application.getCoverLetter();
+            String reasonToSelect = application.getReasonToSelect();
+            try {
+                values.add(List.of(
+                        tenant.getUserName(),
+                        job.getId().toString(),
+                        title != null ? title : " ",
+                        job.getUrl(),
+                        application.getCoverLetter() != null ? application.getCoverLetter() : "--",
+                        application.getReasonToSelect()
+                ));
+            }catch(Exception e){
+                log.info("userName: {}", userName);
+                log.info("jobId: {}", jobId);
+                log.info("title: {}", title);
+                log.info("jobUrl: {}", jobUrl);
+                log.info("coverLetter: {}", coverLetter);
+                log.info("reasonToSelect: {}", reasonToSelect);
+                throw e;
+            }
         }
 
         this.updateSheet(spreadsheet.getSpreadsheetId(), "Sheet1!A1", values);
@@ -101,11 +121,11 @@ public class GoogleSheetsService {
         for(CheckedJob checkedJob: checkedJobList){
             valuesCheckedJobs.add(List.of(
                     checkedJob.getId(),
-                    checkedJob.getJob().getTitle(),
+                    checkedJob.getJob().getTitle()!=null ? checkedJob.getJob().getTitle() : " ",
                     checkedJob.getJob().getUrl(),
                     checkedJob.getJob().getDescription(),
                     checkedJob.getReasonToSkip(),
-                    checkedJob.getLocalDate().toString()
+                    checkedJob.getAddedDateTime().toString()
             ));
         }
         this.updateSheet(spreadsheet.getSpreadsheetId(), newSheetName + "!A1", valuesCheckedJobs);
@@ -119,9 +139,11 @@ public class GoogleSheetsService {
     }
 
     private Credential getCredentials(final NetHttpTransport HTTP_TRANSPORT) throws IOException {
+        // Load client secrets from the classpath.
         ClassPathResource resource = new ClassPathResource(CREDENTIALS_FILE_PATH);
         GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(resource.getInputStream()));
 
+        // Build flow and trigger user authorization request.
         GoogleAuthorizationCodeFlow flow = new GoogleAuthorizationCodeFlow.Builder(
                 HTTP_TRANSPORT, JSON_FACTORY, clientSecrets, SCOPES)
                 .setDataStoreFactory(new FileDataStoreFactory(new java.io.File(TOKENS_DIRECTORY_PATH)))

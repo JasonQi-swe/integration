@@ -23,7 +23,7 @@ public class JobScheduler {
     @Autowired
     private IntegrationService integrationService;
 
-    @Scheduled(cron = "0 0 0 * * ?")
+    @Scheduled(cron = "0 0 0 * * ?") // Run every day at midnight
     public void runJob() {
         //jobService.processJobs();
     }

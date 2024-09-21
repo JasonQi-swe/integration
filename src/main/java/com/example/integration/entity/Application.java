@@ -10,8 +10,10 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import jakarta.persistence.UniqueConstraint;
 import lombok.Data;
+import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity
 @Data
@@ -32,7 +34,9 @@ public class Application {
     @Column(columnDefinition = "LONGTEXT")
     private String coverLetter;
 
-    private LocalDate localDate;
+    @CreationTimestamp
+    @Column(updatable = false)
+    private LocalDateTime addedDateTime;
 
     @Column(columnDefinition = "LONGTEXT")
     private String reasonToSelect;

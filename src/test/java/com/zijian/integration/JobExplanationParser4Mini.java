@@ -1,4 +1,4 @@
-package com.example.integration;
+package com.zijian.integration;
 
 import java.util.*;
 import java.util.regex.Matcher;
@@ -49,16 +49,24 @@ public class JobExplanationParser4Mini {
     }
     public static Map<String, String> parseJobExplanations(String input) {
         Map<String, String> result = new HashMap<>();
+
+        // Remove leading and trailing brackets if present
         input = input.replaceAll("^\\[|\\]$", "");
+
+        // Split the string by "], [" to handle multiple entries
         String[] entries = input.split("\\], \\[");
 
         for (String entry : entries) {
+            // Use regex to find the job ID and reason
             Matcher matcher = Pattern.compile("(\\d{9,11}):\\s*(.+?)(?=,\\s*\\d{10}:|$)").matcher(entry);
 
             while (matcher.find()) {
                 String jobId = matcher.group(1);
                 String reason = matcher.group(2).trim();
+
+                // Remove any trailing commas or brackets
                 reason = reason.replaceAll("[,\\]]$", "");
+
                 result.put(jobId, reason);
             }
         }
@@ -66,15 +74,22 @@ public class JobExplanationParser4Mini {
         return result;
     }
     public static boolean isValidFormat(String input) {
+        // Remove leading and trailing whitespace
         input = input.trim();
+
+        // Check if the string starts with '[' and ends with ']'
         if (!(input.startsWith("[") && input.endsWith("]"))) {
             return false;
         }
 
+        // Remove the outer brackets
         input = input.substring(1, input.length() - 1);
+
+        // Split the string by "], [" to separate multiple entries
         String[] entries = input.split("\\],\\s*\\[");
 
         for (String entry : entries) {
+            // Check if each entry matches the expected format
             if (!entry.matches("\\d{9,11}:\\s*(YES|NO)\\s*-?\\s*.+")) {
                 return false;
             }
@@ -84,16 +99,22 @@ public class JobExplanationParser4Mini {
     }
 
     public static boolean isValidFormatold(String input) {
+        // Remove leading and trailing whitespace
         input = input.trim();
+
+        // Check if the string starts with '[' and ends with ']'
         if (!(input.startsWith("[") && input.endsWith("]"))) {
             return false;
         }
 
+        // Remove the outer brackets
         input = input.substring(1, input.length() - 1);
 
+        // Split the string by "], [" to separate multiple entries
         String[] entries = input.split("\\],\\s*\\[");
 
         for (String entry : entries) {
+            // Check if each entry matches the expected format
             if (!entry.matches("\\d{9,11}:\\s*(YES|NO),\\s*.+")) {
                 return false;
             }

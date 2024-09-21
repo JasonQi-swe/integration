@@ -8,19 +8,19 @@ import java.util.Map;
 @Data
 public class SearchJobsRequest {
 
-    private String keywords;  
-    private String locationId;  
-    private String companyIds;  
-    private String datePosted;  
-    private String salary;  
-    private String jobType;  
-    private String experienceLevel;  
-    private String titleIds;  
-    private String functionIds;  
-    private int page;  
-    private String industryIds;  
-    private String onsiteRemote;  
-    private String sort;  
+    private String keywords;  // Required
+    private String locationId;  // Optional
+    private String companyIds;  // Optional
+    private String datePosted;  // Optional
+    private String salary;  // Optional
+    private String jobType;  // Optional
+    private String experienceLevel;  // Optional
+    private String titleIds;  // Optional
+    private String functionIds;  // Optional
+    private int page;  // Optional
+    private String industryIds;  // Optional
+    private String onsiteRemote;  // Optional
+    private String sort;  // Optional
 
     public Map<String, String> toMap() {
         if (keywords == null || keywords.isEmpty()) {
